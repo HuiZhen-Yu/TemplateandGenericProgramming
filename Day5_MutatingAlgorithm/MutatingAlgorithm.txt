@@ -1,0 +1,7 @@
+编译算法：
+变异算法是指那些改变容器中对象的操作
+具体包括：copy/remove/swap/unique/transform/reserve/replace/rotate/fill/random_shuffle/generate/partition
+
+sorting:
+
+numric:
