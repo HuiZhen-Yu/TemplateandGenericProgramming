@@ -1,0 +1,28 @@
+
+Stack: 是一种先进后出的数据结构，只有一个出口
+    操作：push，pop，top
+    #include <stack> 以deque作为默认的底层结构，不允许遍历，没有iteator 
+
+Queue：是一种先进先出的数据结构
+    操作：push，front，back
+    #include <queue> 不允许遍历，没有iteator 
+
+Map: 是一种关联容器，存储的对象是Key/Value pair
+    #include <map>
+    不允许有重复的key，并且map存储的对象必须是可排序的，默认采用less定义排序行为，也可以自己定义仿函数
+    初始化：
+    const int size = 3;
+    const std::pair<int, Employee> items[size] = {
+    make_pair(1,Employee(L"Tom")),make_pair(1,Employee(L"Tom")),make_pair(1,Employee(L"Tom"))};
+    map<int,Employee,ReverseId> map1(items,items+3);
+    插入元素 insert，删除元素erase，存取元素[]
+
+multimap: 类似map的关联容器，允许key重复
+
+set：是一种关联容器，存储的对象既是key又是value
+    不允许有重复的key，存储的对象必须是具备可排序性的，默认采用less，存储对象必须具备operator<行为，也可以自定义排序
+    #include<set> 插入元素insert，删除元素erase
+    相关算法：set_union合并set，ser_insersection挑出两个set里面共同的东西，set_difference挑出两个set里面不同的东西
+
+    set需要特别注意的问题：
+        用于排序的成员是不能改变，除了key之外可以改变（特殊方式）。set的实现方式不允许通过迭代器改变成员对象

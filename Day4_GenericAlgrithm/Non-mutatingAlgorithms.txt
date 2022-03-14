@@ -1,0 +1,3 @@
+非易变算法概述：
+--非变异算法是一系列模板函数，在不改变操作对象的前提下对元素进行处理，诸如查找、子序列搜索、统计、匹配等等。
+--具体包括（for_each/find/find_if/adjacent_find/find_first_of/count/count_if/mismatch/equal/search）
